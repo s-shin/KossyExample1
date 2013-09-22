@@ -1,0 +1,5 @@
+<form method="post" action="<: $c.req.uri_for('/notes') :>">
+  <textarea name="content"></textarea><br />
+  <input type="submit" value="Submit" class="btn">
+</form>
+

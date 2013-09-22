@@ -1,0 +1,14 @@
+: cascade simple_base
+: around content -> {
+: include notes::_form;
+: if $c.stash.flash.result {
+<p><: $c.stash.flash.result :></p>
+: }
+<h2>Note List</h2>
+<ul>
+: while $note_itr.next -> $note {
+  <li>[<: $note.id :>] <: $note.content :> (<: $note.created_at :>)</li>
+: }
+</ul>
+: }
+

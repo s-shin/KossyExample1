@@ -1,0 +1,5 @@
+: cascade simple_base
+: around content -> {
+<p><: $note.content :> (<: $note.created_at :>)</p>
+: }
+

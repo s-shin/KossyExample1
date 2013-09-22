@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><: $c.stash.site_name :></title>
+    <link rel="shortcut icon" href="<: $c.req.uri_for('/favicon.ico') :>" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="<: $c.req.uri_for('/css/bootstrap.min.css') :>" />
+    <style>
+body { padding-top: 60px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="<: $c.req.uri_for('/') :>"><: $c.stash.site_name :></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      : block content -> {}
+    </div>
+
+    <script type="text/javascript" src="<: $c.req.uri_for('/js/jquery.min.js') :>"></script>
+    <script type="text/javascript" src="<: $c.req.uri_for('/js/bootstrap.min.js') :>"></script>
+  </body>
+</html>
+
+
